@@ -1,0 +1,6 @@
+01-09 13:54:35.097 train fine cities: ['train/aachen', 'train/bochum', 'train/bremen', 'train/cologne', 'train/darmstadt', 'train/dusseldorf', 'train/erfurt', 'train/hamburg', 'train/hanover', 'train/jena', 'train/krefeld', 'train/monchengladbach', 'train/strasbourg', 'train/stuttgart', 'train/tubingen', 'train/ulm', 'train/weimar', 'train/zurich']
+01-09 13:54:35.130 Cityscapes-train: 2975 images
+01-09 13:54:35.132 val fine cities: ['val/frankfurt', 'val/lindau', 'val/munster']
+01-09 13:54:35.139 Cityscapes-val: 500 images
+01-09 13:54:35.140 Using Per Image based weighted loss
+01-09 13:54:35.142 Using Cross Entropy Loss

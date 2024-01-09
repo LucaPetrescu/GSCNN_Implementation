@@ -1,0 +1,8 @@
+01-09 20:03:40.330 train fine cities: ['train/aachen', 'train/bochum', 'train/bremen', 'train/cologne', 'train/darmstadt', 'train/dusseldorf', 'train/erfurt', 'train/hamburg', 'train/hanover', 'train/jena', 'train/krefeld', 'train/monchengladbach', 'train/strasbourg', 'train/stuttgart', 'train/tubingen', 'train/ulm', 'train/weimar', 'train/zurich']
+01-09 20:03:40.365 Cityscapes-train: 2975 images
+01-09 20:03:40.365 val fine cities: ['val/frankfurt', 'val/lindau', 'val/munster']
+01-09 20:03:40.372 Cityscapes-val: 500 images
+01-09 20:03:40.372 Using Per Image based weighted loss
+01-09 20:03:40.375 Using Cross Entropy Loss
+01-09 20:03:41.148 Model params = 137.3M
+01-09 20:03:41.177 Loaded weights from IMGNET classifier

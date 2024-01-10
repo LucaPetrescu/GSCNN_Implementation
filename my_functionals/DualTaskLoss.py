@@ -106,6 +106,11 @@ class DualTaskLoss(nn.Module):
         input_logits = torch.where(ignore_mask.view(N, 1, H, W).expand(N, 19, H, W),
                                    torch.zeros(N,C,H,W).cuda(),
                                    input_logits)
+
+#################################################################        
+
+#################################################################
+
         gt_semantic_masks = gts.detach()
         gt_semantic_masks = torch.where(ignore_mask, torch.zeros(N,H,W).long().cuda(), gt_semantic_masks)
         gt_semantic_masks = _one_hot_embedding(gt_semantic_masks, 19).detach()
@@ -117,7 +122,8 @@ class DualTaskLoss(nn.Module):
         g_hat = compute_grad_mag(gt_semantic_masks, cuda=self._cuda)
 
         g = g.view(N, -1)
-        g_hat = g_hat.view(N, -1)
+        # g_hat = g_hat.view(N, -1)
+        g_hat = g_hat.reshape((N, -1))
         loss_ewise = F.l1_loss(g, g_hat, reduction='none', reduce=False)
 
         p_plus_g_mask = (g >= th).detach().float()

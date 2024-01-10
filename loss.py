@@ -123,14 +123,25 @@ class ImageBasedCrossEntropyLoss2d(nn.Module):
         self.upper_bound = upper_bound
         self.batch_weights = cfg.BATCH_WEIGHTING
 
+    # def calculateWeights(self, target):
+    #     hist = np.histogram(target.flatten(), range(
+    #         self.num_classes + 1), normed=True)[0]
+    #     if self.norm:
+    #         hist = ((hist != 0) * self.upper_bound * (1 / hist)) + 1
+    #     else:
+    #         hist = ((hist != 0) * self.upper_bound * (1 - hist)) + 1
+    #     return hist
+
     def calculateWeights(self, target):
-        hist = np.histogram(target.flatten(), range(
-            self.num_classes + 1), normed=True)[0]
-        if self.norm:
-            hist = ((hist != 0) * self.upper_bound * (1 / hist)) + 1
-        else:
-            hist = ((hist != 0) * self.upper_bound * (1 - hist)) + 1
-        return hist
+        count = np.bincount(target.flatten())
+        class_weights = np.zeros(self.num_classes)
+        for i in range(self.num_classes):
+            if i < len(count): 
+                if count[i] == 0:
+                    class_weights[i] = self.upper_bound
+                else:
+                    class_weights[i] = self.upper_bound / count[i]
+            return class_weights
 
     def forward(self, inputs, targets):
         target_cpu = targets.data.cpu().numpy()

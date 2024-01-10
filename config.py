@@ -64,7 +64,7 @@ __C.STRICTBORDERCLASS= None
 
 __C.DATASET =AttrDict()
 # __C.DATASET.CITYSCAPES_DIR='/home/username/data/cityscapes'
-__C.DATASET.CITYSCAPES_DIR=r"C:\Users\Luca Petrescu\Desktop\Master\Anul 1\Semestrul 1\Machine Learning and Artificial Intelligence\Proiect\GSCNN_Implementation\GSCNN\data"
+__C.DATASET.CITYSCAPES_DIR=r"C:\Users\Luca Petrescu\Desktop\GSCNN_Implementation\data"
 __C.DATASET.CV_SPLITS=3
 
 __C.MODEL = AttrDict()

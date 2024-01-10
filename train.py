@@ -75,7 +75,7 @@ parser.add_argument('--lr_schedule', type=str, default='poly',
                     help='name of lr schedule: poly')
 parser.add_argument('--poly_exp', type=float, default=1.0,
                     help='polynomial LR exponent')
-parser.add_argument('--bs_mult', type=int, default=1)
+parser.add_argument('--bs_mult', type=int, default=1) #Default was 1 at first
 parser.add_argument('--bs_mult_val', type=int, default=2)
 parser.add_argument('--crop_size', type=int, default=720,
                     help='training crop size')

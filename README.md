@@ -1,3 +1,5 @@
+Implementation of the GSCNN architecture model in a Jupyter Notebook. 
+
 # GSCNN
 This is the official code for:
 

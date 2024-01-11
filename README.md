@@ -8,9 +8,7 @@ This is the official code for:
 ICCV 2019
 **[[Paper](https://arxiv.org/abs/1907.05740)]  [[Project Page](https://nv-tlabs.github.io/GSCNN/)]**
 
-![GSCNN DEMO](docs/resources/gscnn.gif)
 
-Based on based on https://github.com/NVIDIA/semantic-segmentation.
 
 ## License
 ```

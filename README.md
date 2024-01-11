@@ -1,13 +1,11 @@
 Implementation of the GSCNN architecture model in a Jupyter Notebook. 
 
 # GSCNN
-This is the official code for:
 
 #### Gated-SCNN: Gated Shape CNNs for Semantic Segmentation
 
-[Towaki Takikawa](https://tovacinni.github.io), [David Acuna](http://www.cs.toronto.edu/~davidj/), [Varun Jampani](https://varunjampani.github.io), [Sanja Fidler](http://www.cs.toronto.edu/~fidler/)
+Credit goes to: [Towaki Takikawa](https://tovacinni.github.io), [David Acuna](http://www.cs.toronto.edu/~davidj/), [Varun Jampani](https://varunjampani.github.io), [Sanja Fidler](http://www.cs.toronto.edu/~fidler/)
 
-ICCV 2019
 **[[Paper](https://arxiv.org/abs/1907.05740)]  [[Project Page](https://nv-tlabs.github.io/GSCNN/)]**
 
 
